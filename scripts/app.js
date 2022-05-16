@@ -24,7 +24,7 @@ newNameForm.addEventListener('submit', e => {
     // reset the form
     newNameForm.reset();
     // show then hide the update message
-    updateMssg.innerText = `Your name was updated to ${newName}!`;
+    updateMssg.innerText = `Twoja nazwa użytkownika to ${newName}!`;
     setTimeout(() => updateMssg.innerText = '', 1500);
 });
 

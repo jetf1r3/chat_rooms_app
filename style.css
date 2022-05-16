@@ -1,0 +1,27 @@
+.container{
+    max-width: 600px;
+}
+
+.btn{
+    background: #43d9be!important;
+    color: #fff;
+    border: none!important;
+    box-shadow: none !important;
+}
+
+.btn:focus{
+    outline: none !important;
+}
+
+input[type=text]:focus{
+    box-shadow: none!important;
+}
+
+.username{
+    font-weight: bold;
+}
+
+.time{
+    font-size: .7em;
+    color: #999;
+}

@@ -4,6 +4,7 @@ const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const updateMssg = document.querySelector('.update-messg');
 const rooms = document.querySelector('.chat-rooms');
+const roomTitle = document.querySelector('.room-title');
 
 // add a new chat
 newChatForm.addEventListener('submit', e => {
@@ -32,6 +33,7 @@ newNameForm.addEventListener('submit', e => {
 rooms.addEventListener('click', e => {
     if(e.target.tagName === "BUTTON"){
         chatUI.clear();
+        roomTitle.innerText = `#${e.target.getAttribute('id')}`;
         chatroom.updateRoom(e.target.getAttribute('id'));
         chatroom.getChats(chat => chatUI.render(chat));
     }

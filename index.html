@@ -29,24 +29,27 @@
             <ul class="chat-list list-group"></ul>
         </div>
         <!-- new chat form -->
-        <form class="new-chat my-3">
+        <form class="new-chat my-3 d-none">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <div class="input-group-text">Your message:</div>
+                    <div class="mess-name input-group-text text-uppercase">Your message:</div>
                 </div>
-                <input type="text" id="message" class="form-control" required>
+                <input type="text" id="message" class="form-control" placeholder="type your message..." required>
                 <div class="input-group-append">
                     <input type="submit" class="btn" value="send">
                 </div>
             </div>
         </form>
-        <!-- update name form -->
+    </div>
+
+    <!-- update name form -->
+    <div class="container">
         <form class="new-name my-3">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <div class="input-group-text">Update name:</div>
+                    <div class="input-group-text">Username:</div>
                 </div>
-                <input type="text" id="name" class="form-control" required>
+                <input type="text" id="name" class="form-control" placeholder="enter your username..." required>
                 <div class="input-group-append">
                     <input type="submit" class="btn" value="update">
                 </div>

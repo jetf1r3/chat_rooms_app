@@ -17,11 +17,16 @@ input[type=text]:focus{
     box-shadow: none!important;
 }
 
-.username{
+.username,
+.mess-name{
     font-weight: bold;
 }
 
 .time{
     font-size: .7em;
+    color: #999;
+}
+
+input[type=text]::placeholder{
     color: #999;
 }

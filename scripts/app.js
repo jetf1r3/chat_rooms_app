@@ -42,6 +42,16 @@ rooms.addEventListener('click', e => {
 // check local storage for a name
 const username = localStorage.username ? localStorage.getItem('username') : 'anonymous'
 
+const update = () => {
+    if(localStorage.username){
+        newChatForm.classList.remove('d-none');
+        newNameForm.classList.add('d-none');
+        document.querySelector('.mess-name').textContent = `${localStorage.getItem('username')}: `
+    }
+}
+
+update();
+
 // class instances
 const chatUI = new ChatUI(chatList);
 const chatroom = new Chatroom('gaming', username);
